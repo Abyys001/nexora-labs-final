@@ -1,7 +1,7 @@
 // GENERATED FILE — do not edit by hand.
-// Source of truth: engineering-kit/assets/icons/nexora (generate-icons.mjs
+// Source of truth: engineering-kit/assets/icons/cybercina (generate-icons.mjs
 // defines the icons, build-tsx.mjs emits this file). To change an icon,
-// edit the kit and run: node assets/icons/nexora/build-tsx.mjs
+// edit the kit and run: node assets/icons/cybercina/build-tsx.mjs
 import type { ReactElement, SVGProps } from "react";
 
 export const industryIconNames = ["automotive", "aviation", "banking-payments", "construction", "currency-exchange", "ecommerce-retail", "education", "energy-utilities", "enterprise", "finance", "fintech", "food-beverage", "healthcare", "logistics", "media-entertainment", "mortgage-lending", "oil-gas", "other", "professional-services", "publishing", "real-estate", "retail-fmcg", "sme", "sports", "startups", "travel-hospitality"] as const;
@@ -425,7 +425,7 @@ export interface BrandIconProps extends SVGProps<SVGSVGElement> {
  * Cybercina brand icon. Renders aria-hidden unless `title` is given.
  * Pair with a `.group` ancestor (or `[data-active]` / `.icon-live`) and
  * set `--icon-accent` to drive the icon's motion + lime accent — see
- * engineering-kit/assets/icons/nexora/icons.css.
+ * engineering-kit/assets/icons/cybercina/icons.css.
  */
 export function BrandIcon({ name, title, className, ...props }: BrandIconProps) {
   return (
