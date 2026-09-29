@@ -2,7 +2,7 @@ import { randomUUID } from "node:crypto";
 import { sql } from "drizzle-orm";
 import { boolean, date, integer, jsonb, numeric, pgEnum, pgTable, text, timestamp, unique, uuid } from "drizzle-orm/pg-core";
 import type { ConfigurationDto } from "../enquiries/dto/create-enquiry.dto.js";
-import type { Estimate, Selection } from "@nexora/pricing";
+import type { Estimate, Selection } from "@cybercina/pricing";
 
 export const enquirySourceEnum = pgEnum("enquiry_source", ["contact", "quote"]);
 

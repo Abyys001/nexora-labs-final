@@ -1,6 +1,6 @@
 import "server-only"
 
-import { defaultCatalog, type PricingCatalog } from "@nexora/pricing"
+import { defaultCatalog, type PricingCatalog } from "@cybercina/pricing"
 
 import type { PublicCurrency } from "@/lib/catalog"
 import type { PublicRequestView } from "@/lib/request-view"

@@ -1,4 +1,4 @@
-import { selectionSchema } from "@nexora/pricing"
+import { selectionSchema } from "@cybercina/pricing"
 import { z } from "zod"
 
 // Mirrors apps/api/src/project-requests/dto/create-project-request.dto.ts.

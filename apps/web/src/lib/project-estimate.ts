@@ -1,8 +1,8 @@
 // Recommendation logic for the Project Builder, plus a thin re-export of the
 // shared pricing engine. Money is never computed here — `estimate()` comes
-// straight from `@nexora/pricing` and the API always recomputes it server-side.
-import { estimate } from "@nexora/pricing"
-import type { Estimate, PricingCatalog, Selection } from "@nexora/pricing"
+// straight from `@cybercina/pricing` and the API always recomputes it server-side.
+import { estimate } from "@cybercina/pricing"
+import type { Estimate, PricingCatalog, Selection } from "@cybercina/pricing"
 
 export { estimate }
 export type { Estimate, PricingCatalog, Selection }

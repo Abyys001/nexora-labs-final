@@ -1,13 +1,13 @@
-name: nexora-labs
+name: cybercina
 
 services:
   db:
     image: postgres:17-alpine
     restart: unless-stopped
     environment:
-      POSTGRES_USER: ${POSTGRES_USER:-nexora}
+      POSTGRES_USER: ${POSTGRES_USER:-cybercina}
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?set POSTGRES_PASSWORD in .env}
-      POSTGRES_DB: ${POSTGRES_DB:-nexora}
+      POSTGRES_DB: ${POSTGRES_DB:-cybercina}
     volumes:
       - db-data:/var/lib/postgresql/data
     healthcheck:
@@ -26,7 +26,7 @@ services:
       db:
         condition: service_healthy
     environment:
-      DATABASE_URL: postgres://${POSTGRES_USER:-nexora}:${POSTGRES_PASSWORD}@db:5432/${POSTGRES_DB:-nexora}
+      DATABASE_URL: postgres://${POSTGRES_USER:-cybercina}:${POSTGRES_PASSWORD}@db:5432/${POSTGRES_DB:-cybercina}
       JWT_SECRET: ${JWT_SECRET:?set JWT_SECRET in .env}
       JWT_EXPIRES_IN_SECONDS: ${JWT_EXPIRES_IN_SECONDS:-28800}
       IP_HASH_SALT: ${IP_HASH_SALT:?set IP_HASH_SALT in .env}

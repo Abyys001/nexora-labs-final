@@ -45,7 +45,7 @@ export function FloatingContact() {
         href={site.whatsapp}
         target="_blank"
         rel="noopener noreferrer"
-        aria-label="Message Nexora Labs on WhatsApp"
+        aria-label="Message Cybercina on WhatsApp"
         tabIndex={visible ? 0 : -1}
         className={cn(
           "fixed right-4 bottom-[max(1rem,env(safe-area-inset-bottom))] z-40 flex size-14 items-center justify-center rounded-2xl border border-white/15 bg-black shadow-[0_12px_32px_-8px_rgb(57_255_106/0.45)] transition-all duration-500 ease-out active:scale-95 md:hidden",

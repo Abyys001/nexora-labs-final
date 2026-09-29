@@ -37,7 +37,7 @@ export const organizationJsonLd = {
   "@type": "Organization",
   name: site.name,
   url: site.url,
-  logo: `${site.url}/apple-icon`,
+  logo: `${site.url}/brand/cybercina-logo.png`,
   slogan: site.tagline,
   description: site.description,
   email: site.email,

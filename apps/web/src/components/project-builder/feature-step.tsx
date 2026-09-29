@@ -1,6 +1,6 @@
 "use client"
 
-import type { PricingCatalog, PricingItem } from "@nexora/pricing"
+import type { PricingCatalog, PricingItem } from "@cybercina/pricing"
 import { Plus, Search, Sparkles, X } from "lucide-react"
 import { useId, useMemo, useRef, useState, type KeyboardEvent } from "react"
 

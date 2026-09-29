@@ -76,9 +76,9 @@ describe("payments", () => {
     const created = await request(server.baseUrl)
       .post("/api/admin/admins")
       .set("Authorization", `Bearer ${accessToken}`)
-      .send({ email: "payments-viewer@nexora.test", name: "Viewer", role: "viewer", password: "viewer-password-123" });
+      .send({ email: "payments-viewer@cybercina.test", name: "Viewer", role: "viewer", password: "viewer-password-123" });
     expect(created.status).toBe(201);
-    const login = await request(server.baseUrl).post("/api/auth/login").send({ email: "payments-viewer@nexora.test", password: "viewer-password-123" });
+    const login = await request(server.baseUrl).post("/api/auth/login").send({ email: "payments-viewer@cybercina.test", password: "viewer-password-123" });
 
     const res = await request(server.baseUrl)
       .post("/api/admin/payments")

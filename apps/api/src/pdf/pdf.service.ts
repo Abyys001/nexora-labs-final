@@ -107,7 +107,7 @@ export class PdfService {
     doc.rect(0, 0, doc.page.width, bandHeight).fill(BLACK);
     doc.rect(0, bandHeight - 6, doc.page.width, 6).fill(LIME);
 
-    doc.fillColor("#FFFFFF").font("Heading").fontSize(30).text("NEXORA LABS", MARGIN, 90, { characterSpacing: 1 });
+    doc.fillColor("#FFFFFF").font("Heading").fontSize(30).text("CYBERCINA", MARGIN, 90, { characterSpacing: 1 });
     doc.font("Body").fontSize(12).fillColor(LIME).text("COMMERCIAL PROPOSAL", MARGIN, 140);
 
     doc.fillColor(BLACK).font("Body").fontSize(11);

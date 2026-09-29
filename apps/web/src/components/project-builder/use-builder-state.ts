@@ -73,7 +73,7 @@ export const initialBuilderState: BuilderState = {
 
 // v2: the state shape changed with the catalogue-driven builder, so a v1 draft
 // left in a tab is dropped rather than half-restored.
-const STORAGE_KEY = "nexora:project-builder:v2"
+const STORAGE_KEY = "cybercina:project-builder:v2"
 
 function load(): Partial<BuilderState> | null {
   try {

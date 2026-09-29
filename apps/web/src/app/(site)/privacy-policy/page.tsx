@@ -2,7 +2,7 @@ import { LegalPage } from "@/components/sections/legal-page"
 import { site } from "@/content/site"
 import { pageMetadata } from "@/lib/seo"
 
-export const metadata = pageMetadata({ title: "Privacy Policy", description: "How Nexora Labs collects, uses and protects personal information.", path: "/privacy-policy" })
+export const metadata = pageMetadata({ title: "Privacy Policy", description: "How Cybercina collects, uses and protects personal information.", path: "/privacy-policy" })
 
 export default function PrivacyPage() {
   return (

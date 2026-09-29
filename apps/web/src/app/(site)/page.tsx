@@ -28,10 +28,10 @@ export const metadata = {
   ...pageMetadata({
     title: "Custom Software, AI & Digital Solutions",
     description:
-      "Nexora Labs designs and builds custom software, AI solutions, web platforms, mobile apps and business systems for companies ready to grow. Projects from £2,000.",
+      "Cybercina designs and builds custom software, AI solutions, web platforms, mobile apps and business systems for companies ready to grow. Projects from £2,000.",
     path: "/",
   }),
-  title: { absolute: "Nexora Labs | Custom Software, AI & Digital Solutions" },
+  title: { absolute: "Cybercina | Custom Software, AI & Digital Solutions" },
 }
 
 const capabilities = ["Custom software", "AI assistants", "Web platforms", "Mobile apps", "CRM systems", "Automation", "E-commerce", "Cloud & DevOps", "Data & analytics", "Integrations"]

@@ -15,7 +15,7 @@ import { faqJsonLd, pageMetadata } from "@/lib/seo"
 
 export const metadata = pageMetadata({
   title: "Frequently Asked Questions",
-  description: "Answers about pricing, timelines, process, AI, ownership and ongoing support for software projects with Nexora Labs.",
+  description: "Answers about pricing, timelines, process, AI, ownership and ongoing support for software projects with Cybercina.",
   path: "/faq",
 })
 

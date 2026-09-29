@@ -1,5 +1,5 @@
 import { Controller, Get, Header } from "@nestjs/common";
-import type { PricingCatalog } from "@nexora/pricing";
+import type { PricingCatalog } from "@cybercina/pricing";
 import { CurrenciesService, type PublicCurrency } from "../currencies/currencies.service.js";
 import { PricingService } from "./pricing.service.js";
 

@@ -1,6 +1,6 @@
 import { Injectable, Logger } from "@nestjs/common";
 import { ConfigService } from "@nestjs/config";
-import type { Estimate } from "@nexora/pricing";
+import type { Estimate } from "@cybercina/pricing";
 import { createTransport } from "nodemailer";
 import type { Env } from "../config/env.schema.js";
 import type { Enquiry } from "../db/schema.js";
@@ -99,7 +99,7 @@ export class NotificationsService {
       await transport.sendMail({
         from,
         to: enquiry.email,
-        subject: `Your Nexora Labs project request ${enquiry.reference}`,
+        subject: `Your Cybercina project request ${enquiry.reference}`,
         text: [
           `Hi ${enquiry.name},`,
           "",

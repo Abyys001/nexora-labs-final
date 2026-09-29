@@ -1,7 +1,7 @@
 import { LegalPage } from "@/components/sections/legal-page"
 import { pageMetadata } from "@/lib/seo"
 
-export const metadata = pageMetadata({ title: "Terms & Conditions", description: "Terms governing the use of the Nexora Labs website.", path: "/terms" })
+export const metadata = pageMetadata({ title: "Terms & Conditions", description: "Terms governing the use of the Cybercina website.", path: "/terms" })
 
 export default function TermsPage() {
   return (

@@ -1,4 +1,4 @@
-import { paymentPlanKindSchema } from "@nexora/pricing";
+import { paymentPlanKindSchema } from "@cybercina/pricing";
 import { z } from "zod";
 
 export const createPaymentPlanSchema = z.object({

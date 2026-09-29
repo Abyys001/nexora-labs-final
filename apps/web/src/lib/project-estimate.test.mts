@@ -1,7 +1,7 @@
 import assert from "node:assert/strict"
 import { describe, it } from "node:test"
 
-import { defaultCatalog } from "@nexora/pricing"
+import { defaultCatalog } from "@cybercina/pricing"
 
 import { recommendations } from "../content/project-builder.ts"
 import { activeRecommendations, estimate, missingDependencies } from "./project-estimate.ts"
@@ -19,7 +19,7 @@ const baseSelection = {
   timeline: "flexible",
 }
 
-describe("estimate (via @nexora/pricing)", () => {
+describe("estimate (via @cybercina/pricing)", () => {
   it("returns a foundation line and a rounded total for a bare solution", () => {
     const e = estimate(defaultCatalog, baseSelection)
     assert.equal(e.lines[0].key, "foundation")

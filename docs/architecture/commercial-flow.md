@@ -5,7 +5,7 @@ journey. Web, API and admin all build against this document. Money is stored
 as **integer GBP pounds** (no pence; every price in this product is a whole
 pound figure). Converted amounts are stored alongside the rate used.
 
-## 1. Shared pricing engine — `packages/pricing` (`@nexora/pricing`)
+## 1. Shared pricing engine — `packages/pricing` (`@cybercina/pricing`)
 
 Pure TypeScript, no runtime deps except `zod`, built with `tsc` to `dist/`
 (ESM + `.d.ts`). Imported by `apps/api` (authoritative) and `apps/web` (live

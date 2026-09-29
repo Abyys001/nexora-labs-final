@@ -422,7 +422,7 @@ export interface BrandIconProps extends SVGProps<SVGSVGElement> {
 }
 
 /**
- * Nexora Labs brand icon. Renders aria-hidden unless `title` is given.
+ * Cybercina brand icon. Renders aria-hidden unless `title` is given.
  * Pair with a `.group` ancestor (or `[data-active]` / `.icon-live`) and
  * set `--icon-accent` to drive the icon's motion + lime accent — see
  * engineering-kit/assets/icons/nexora/icons.css.

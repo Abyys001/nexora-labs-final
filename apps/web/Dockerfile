@@ -7,19 +7,19 @@ COPY package.json package-lock.json ./
 COPY packages/pricing/package.json packages/pricing/package.json
 COPY apps/web/package.json apps/web/package.json
 COPY apps/api/package.json apps/api/package.json
-RUN npm ci --workspace=@nexora/pricing --workspace=web --include-workspace-root --ignore-scripts
+RUN npm ci --workspace=@cybercina/pricing --workspace=web --include-workspace-root --ignore-scripts
 
 FROM node:24-alpine AS build
 WORKDIR /repo
 ENV NEXT_TELEMETRY_DISABLED=1
 ARG NEXT_PUBLIC_SITE_URL=http://localhost:3000
-ARG NEXT_PUBLIC_CONTACT_EMAIL=hello@nexoralabs.example
+ARG NEXT_PUBLIC_CONTACT_EMAIL=info@cybercina.co.uk
 ENV NEXT_PUBLIC_SITE_URL=$NEXT_PUBLIC_SITE_URL NEXT_PUBLIC_CONTACT_EMAIL=$NEXT_PUBLIC_CONTACT_EMAIL
 COPY --from=deps /repo/node_modules ./node_modules
 COPY package.json package-lock.json ./
 COPY packages/pricing ./packages/pricing
 COPY apps/web ./apps/web
-RUN npm run build -w @nexora/pricing && npm run build -w web
+RUN npm run build -w @cybercina/pricing && npm run build -w web
 
 FROM node:24-alpine AS runtime
 WORKDIR /app

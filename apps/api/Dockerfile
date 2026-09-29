@@ -9,14 +9,14 @@ COPY package.json package-lock.json ./
 COPY packages/pricing/package.json packages/pricing/package.json
 COPY apps/api/package.json apps/api/package.json
 COPY apps/web/package.json apps/web/package.json
-RUN npm ci --workspace=@nexora/pricing --workspace=api --include-workspace-root
+RUN npm ci --workspace=@cybercina/pricing --workspace=api --include-workspace-root
 
 FROM deps AS build
 COPY packages/pricing packages/pricing
 COPY apps/api apps/api
-RUN npm run build -w @nexora/pricing \
+RUN npm run build -w @cybercina/pricing \
   && npm run build -w api \
-  && npm prune --omit=dev --workspace=@nexora/pricing --workspace=api --include-workspace-root
+  && npm prune --omit=dev --workspace=@cybercina/pricing --workspace=api --include-workspace-root
 
 FROM base AS runtime
 ENV NODE_ENV=production

@@ -1,6 +1,6 @@
 import { ConflictException, Injectable, NotFoundException } from "@nestjs/common";
-import { defaultCatalog } from "@nexora/pricing/defaults";
-import type { PricingCatalog, PricingCategory, PricingItem, TimelineOption } from "@nexora/pricing";
+import { defaultCatalog } from "@cybercina/pricing/defaults";
+import type { PricingCatalog, PricingCategory, PricingItem, TimelineOption } from "@cybercina/pricing";
 import { count, eq } from "drizzle-orm";
 import { AuditLogService } from "../audit/audit-log.service.js";
 import { DbService } from "../db/db.service.js";

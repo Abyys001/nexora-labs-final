@@ -18,7 +18,7 @@ import { pageMetadata } from "@/lib/seo"
 
 export const metadata = pageMetadata({
   title: "Contact Us",
-  description: "Talk to Nexora Labs about your software, AI, web or mobile project. Call, WhatsApp or send a project enquiry and we'll reply within one business day.",
+  description: "Talk to Cybercina about your software, AI, web or mobile project. Call, WhatsApp or send a project enquiry and we'll reply within one business day.",
   path: "/contact",
 })
 
@@ -196,7 +196,7 @@ export default function ContactPage() {
         data={{
           "@context": "https://schema.org",
           "@type": "ContactPage",
-          name: "Contact Nexora Labs",
+          name: "Contact Cybercina",
           url: `${site.url}/contact`,
           about: { "@type": "Organization", name: site.name, url: site.url, email: site.email, telephone: "+44 20 7046 6615" },
         }}

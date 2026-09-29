@@ -1,5 +1,5 @@
 import { Injectable, Logger, NotFoundException } from "@nestjs/common";
-import type { Rounding } from "@nexora/pricing";
+import type { Rounding } from "@cybercina/pricing";
 import { ConfigService } from "@nestjs/config";
 import { desc, eq } from "drizzle-orm";
 import { AuditLogService } from "../audit/audit-log.service.js";

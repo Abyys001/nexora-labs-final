@@ -1,4 +1,4 @@
-import { selectionSchema } from "@nexora/pricing";
+import { selectionSchema } from "@cybercina/pricing";
 import { z } from "zod";
 import { companySizeValues } from "../../enquiries/dto/create-enquiry.dto.js";
 

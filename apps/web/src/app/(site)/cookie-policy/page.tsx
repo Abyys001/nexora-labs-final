@@ -1,7 +1,7 @@
 import { LegalPage } from "@/components/sections/legal-page"
 import { pageMetadata } from "@/lib/seo"
 
-export const metadata = pageMetadata({ title: "Cookie Policy", description: "How the Nexora Labs website uses cookies.", path: "/cookie-policy" })
+export const metadata = pageMetadata({ title: "Cookie Policy", description: "How the Cybercina website uses cookies.", path: "/cookie-policy" })
 
 export default function CookiePolicyPage() {
   return (

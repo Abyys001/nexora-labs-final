@@ -37,7 +37,7 @@ export type Project = {
 
 /** Accent per project, kept low-saturation so six previews still read as one system. */
 export const previewThemes: Record<PreviewTheme, { accent: string; soft: string; label: string }> = {
-  ink: { accent: "#bff747", soft: "rgb(191 247 71 / 0.16)", label: "Nexora" },
+  ink: { accent: "#bff747", soft: "rgb(191 247 71 / 0.16)", label: "Cybercina" },
   amber: { accent: "#d8a657", soft: "rgb(216 166 87 / 0.18)", label: "Warm" },
   azure: { accent: "#5aa9e6", soft: "rgb(90 169 230 / 0.18)", label: "Cool" },
   violet: { accent: "#9d8cf0", soft: "rgb(157 140 240 / 0.18)", label: "Violet" },

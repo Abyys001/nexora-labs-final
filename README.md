@@ -1,6 +1,6 @@
-# Nexora Labs
+# Cybercina
 
-The Nexora Labs website, project configurator and commercial back office, in one monorepo.
+The Cybercina website, project configurator and commercial back office, in one monorepo.
 
 A visitor configures a project step by step, gets an automated estimate, and submits it. A specialist reviews the request, sets the final commercial price, issues a written proposal, and the customer chooses how to pay — all from the same system, with a proper PDF at the end of it.
 
@@ -19,7 +19,7 @@ A visitor configures a project step by step, gets an automated estimate, and sub
 
 **Backend** — NestJS 12 (ESM), Drizzle ORM, PostgreSQL 17, Zod validation pipes, JWT auth with role guards, Helmet, per-route throttling, PDFKit for proposal documents, Nodemailer for notifications.
 
-**Shared** — `@nexora/pricing`, a dependency-light TypeScript package with its own test suite.
+**Shared** — `@cybercina/pricing`, a dependency-light TypeScript package with its own test suite.
 
 ---
 
@@ -99,7 +99,7 @@ API_URL=http://127.0.0.1:4000/api npm run dev
 ### Option C — Local Postgres
 
 ```bash
-docker run -d --name nexora-pg -e POSTGRES_PASSWORD=postgres -e POSTGRES_DB=nexora -p 5432:5432 postgres:17-alpine
+docker run -d --name cybercina-pg -e POSTGRES_PASSWORD=postgres -e POSTGRES_DB=cybercina -p 5432:5432 postgres:17-alpine
 cp apps/api/.env.example apps/api/.env   # then edit it
 npm run dev:api        # http://localhost:4000/api
 npm run dev:web        # http://localhost:3000
@@ -167,7 +167,7 @@ Per workspace:
 ```bash
 npm run dev:web                       # next dev
 npm run dev:api                       # nest start --watch
-npm test -w @nexora/pricing           # 34 unit tests
+npm test -w @cybercina/pricing           # 34 unit tests
 npm test -w api                       # 49 end-to-end tests against a real HTTP server
 ```
 
@@ -267,7 +267,7 @@ Payment status is derived from the recorded ledger and the due dates — never f
 
 - **Catalogue** — fetched server-side from `GET /public/pricing` and passed to the client component. If the API is unreachable the bundled defaults render instead, in GBP only, with a notice; the API still re-prices on submit, so a stale catalogue can never produce a binding price.
 - **State** — `useBuilderState` keeps the configuration in `sessionStorage`, so a refresh or a detour doesn't lose it.
-- **Live estimate** — `estimate()` from `@nexora/pricing`, recomputed on every change, with an animated total, a line-by-line breakdown and each multiplier shown as its own adjustment.
+- **Live estimate** — `estimate()` from `@cybercina/pricing`, recomputed on every change, with an animated total, a line-by-line breakdown and each multiplier shown as its own adjustment.
 - **Summary** — a sticky rail on desktop (`0x00C0DE · project.config`, with the branded `.pb-scroll` scrollbar), a collapsible bar on mobile.
 - **Recommendations** — rules in `content/project-builder.ts` suggest companion features based on what has been selected. Suggestions are additive and dismissible.
 - **Submit** — a server action posts to `POST /project-requests`. The API re-prices, allocates a reference (`NX-YYYY-NNNN`), stores a hashed access token and emails both sides. The customer lands on `/request/<token>`, their private page for the whole engagement.

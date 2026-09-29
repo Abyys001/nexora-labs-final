@@ -1,5 +1,5 @@
 import { ConflictException, Injectable, NotFoundException, UnprocessableEntityException } from "@nestjs/common";
-import { convert } from "@nexora/pricing";
+import { convert } from "@cybercina/pricing";
 import { and, desc, eq, max } from "drizzle-orm";
 import { AuditLogService } from "../audit/audit-log.service.js";
 import { CurrenciesService } from "../currencies/currencies.service.js";

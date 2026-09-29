@@ -14,7 +14,7 @@ import { getProjects } from "@/lib/server/projects"
 export const metadata = pageMetadata({
   title: "Selected Projects — Our Work",
   description:
-    "Digital experiences and business systems Nexora Labs has built for real companies: restaurant platforms, an immigration services portal, a print e-commerce platform and automotive booking systems.",
+    "Digital experiences and business systems Cybercina has built for real companies: restaurant platforms, an immigration services portal, a print e-commerce platform and automotive booking systems.",
   path: "/work",
 })
 

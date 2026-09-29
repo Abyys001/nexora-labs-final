@@ -8,13 +8,13 @@ import { PageHero } from "@/components/sections/page-hero"
 import { ProcessSteps } from "@/components/sections/process-steps"
 import { Eyebrow, Section, SectionHeader } from "@/components/sections/section"
 import { Button } from "@/components/ui/button"
-import { aboutValues, processSteps, whyNexora } from "@/content/company"
+import { aboutValues, processSteps, whyCybercina } from "@/content/company"
 import { pageMetadata } from "@/lib/seo"
 
 export const metadata = pageMetadata({
   title: "About Us",
   description:
-    "Nexora Labs helps businesses use technology without unnecessary complexity, combining product thinking, software engineering, AI and business understanding.",
+    "Cybercina helps businesses use technology without unnecessary complexity, combining product thinking, software engineering, AI and business understanding.",
   path: "/about",
 })
 
@@ -30,9 +30,9 @@ export default function AboutPage() {
     <>
       <PageHero
         crumbs={[{ name: "About", path: "/about" }]}
-        eyebrow="About Nexora Labs"
+        eyebrow="About Cybercina"
         title="Technology Should Make Business Simpler."
-        intro="Nexora Labs exists to help businesses use technology without unnecessary complexity — one team across product, engineering, AI and delivery."
+        intro="Cybercina exists to help businesses use technology without unnecessary complexity — one team across product, engineering, AI and delivery."
       />
 
       <Section labelledBy="who-title">
@@ -75,7 +75,7 @@ export default function AboutPage() {
         <div className="grid gap-14 lg:grid-cols-[1.1fr_0.9fr] lg:gap-16 lg:items-start">
           <div>
             <SectionHeader tone="dark" id="why-title" eyebrow="Why businesses work with us" title="More Than a Development Team" className="mb-10 lg:mb-10" />
-            <FeatureGrid items={whyNexora} />
+            <FeatureGrid items={whyCybercina} />
             <Button asChild size="xl" className="group mt-12">
               <Link href="/services">Explore Our Services <ArrowRight className="arrow-nudge" data-icon="inline-end" aria-hidden="true" /></Link>
             </Button>

@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button"
 import { site } from "@/content/site"
 
 const lines = [
-  { prompt: "$", text: "nexora start-project", tone: "text-white" },
+  { prompt: "$", text: "cybercina start-project", tone: "text-white" },
   { prompt: "›", text: "What are you trying to achieve?", tone: "text-white/60" },
   { prompt: "›", text: "Scope, realistic budget and a first step.", tone: "text-lime" },
 ]

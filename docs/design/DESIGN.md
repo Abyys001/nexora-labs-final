@@ -1,4 +1,4 @@
-# Nexora Labs — Design Direction
+# Cybercina — Design Direction
 
 ## Product read
 A UK software, AI and digital transformation studio selling £2k–£50k+ projects to

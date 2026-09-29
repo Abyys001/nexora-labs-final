@@ -1,4 +1,4 @@
-import { complexitySchema, itemKindSchema } from "@nexora/pricing";
+import { complexitySchema, itemKindSchema } from "@cybercina/pricing";
 import { z } from "zod";
 
 const idField = z.string().trim().min(1).max(80);

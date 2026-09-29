@@ -1,9 +1,9 @@
-// Helpers over the live `@nexora/pricing` catalogue — grouping, lookup and
+// Helpers over the live `@cybercina/pricing` catalogue — grouping, lookup and
 // currency formatting. The catalogue itself (items, prices, multipliers)
 // always comes from the API (or `defaults` in demo mode); nothing here
 // invents a price.
-import type { CurrencyContext, Multiplier, PricingCatalog, PricingItem, Rounding } from "@nexora/pricing"
-import { convert } from "@nexora/pricing"
+import type { CurrencyContext, Multiplier, PricingCatalog, PricingItem, Rounding } from "@cybercina/pricing"
+import { convert } from "@cybercina/pricing"
 
 export type PublicCurrency = { code: string; rate: number; rounding: Rounding; rateUpdatedAt: string }
 

@@ -1,7 +1,7 @@
 import { randomBytes, createHash } from "node:crypto";
 import { Injectable, Logger, NotFoundException, UnprocessableEntityException } from "@nestjs/common";
 import { ConfigService } from "@nestjs/config";
-import { convert, estimate, type Estimate, type Selection } from "@nexora/pricing";
+import { convert, estimate, type Estimate, type Selection } from "@cybercina/pricing";
 import { eq, sql } from "drizzle-orm";
 import type { Env } from "../config/env.schema.js";
 import { CurrenciesService } from "../currencies/currencies.service.js";

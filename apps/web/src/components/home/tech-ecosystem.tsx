@@ -21,7 +21,7 @@ export function TechLogo({ slug, name, className }: { slug?: string; name: strin
   return <span aria-hidden="true" className={cn("block bg-current", className)} style={{ mask, WebkitMask: mask } as CSSProperties} />
 }
 
-/** Interactive ecosystem: pick a capability group and its tools orbit the Nexora core. */
+/** Interactive ecosystem: pick a capability group and its tools orbit the Cybercina core. */
 export function TechEcosystem({ groups }: { groups: TechGroup[] }) {
   const [active, setActive] = useState(0)
   const group = groups[active]

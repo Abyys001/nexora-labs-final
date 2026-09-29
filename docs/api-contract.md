@@ -96,7 +96,7 @@ snapshot.
 
 ## Commercial flow — pricing
 
-- `GET /api/public/pricing` (public, cached 60s) → `{ catalog: PricingCatalog, currencies: { code, rate, rounding, rateUpdatedAt }[] }` — enabled currencies only. `PricingCatalog` is the `@nexora/pricing` type (items, categories, complexity/timeline/scale multipliers, settings). Seeded from `packages/pricing/src/defaults.ts` on first boot.
+- `GET /api/public/pricing` (public, cached 60s) → `{ catalog: PricingCatalog, currencies: { code, rate, rounding, rateUpdatedAt }[] }` — enabled currencies only. `PricingCatalog` is the `@cybercina/pricing` type (items, categories, complexity/timeline/scale multipliers, settings). Seeded from `packages/pricing/src/defaults.ts` on first boot.
 - `GET /api/admin/pricing/items/:id` [viewer] / `POST /api/admin/pricing/items` [manager] `CreatePricingItem` / `PUT /api/admin/pricing/items/:id` [manager] `Partial<CreatePricingItem>` (without `id`)
 - `GET /api/admin/pricing/categories/:id` [viewer] / `PUT /api/admin/pricing/categories/:id` [manager] `{ label?, icon?, sort? }`
 - `GET /api/admin/pricing/multipliers/:id` [viewer] / `PUT /api/admin/pricing/multipliers/:id` [manager] `{ label?, description?, multiplier?, weeks?, sort? }`

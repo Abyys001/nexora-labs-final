@@ -1,4 +1,4 @@
-import { roundingSchema } from "@nexora/pricing";
+import { roundingSchema } from "@cybercina/pricing";
 import { z } from "zod";
 
 export const updateCurrencySchema = z.object({

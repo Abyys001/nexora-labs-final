@@ -1,6 +1,6 @@
 "use client"
 
-import type { Estimate, PricingCatalog } from "@nexora/pricing"
+import type { Estimate, PricingCatalog } from "@cybercina/pricing"
 import { Clock3, Gauge, TrendingUp, Users } from "lucide-react"
 import { useMemo } from "react"
 

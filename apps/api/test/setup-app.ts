@@ -3,7 +3,7 @@ import path from "node:path";
 import request from "supertest";
 
 export const TEST_ADMIN = {
-  email: "admin@nexora.test",
+  email: "admin@cybercina.test",
   password: "super-secret-password-123",
   name: "Test Admin",
 };

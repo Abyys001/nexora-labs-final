@@ -1,7 +1,7 @@
 // Shape of the public request endpoints (`/api/public/requests/:token`), mirrored
 // from apps/api/src/project-requests/project-requests.service.ts. Shared by the
 // server fetchers and the client components that render a request.
-import type { Estimate, PaymentPlanKind, Selection } from "@nexora/pricing"
+import type { Estimate, PaymentPlanKind, Selection } from "@cybercina/pricing"
 
 export type CurrencyCode = "GBP" | "EUR" | "USD"
 

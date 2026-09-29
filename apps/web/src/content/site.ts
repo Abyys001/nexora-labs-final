@@ -1,8 +1,8 @@
 export const site = {
-  name: "Nexora Labs",
+  name: "Cybercina",
   tagline: "Technology Built Around Your Business.",
   description:
-    "Custom software, AI and digital solutions for businesses ready to grow. Nexora Labs designs and builds web platforms, mobile apps, AI solutions and business systems.",
+    "Custom software, AI and digital solutions for businesses ready to grow. Cybercina designs and builds web platforms, mobile apps, AI solutions and business systems.",
   url: (process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000").replace(/\/$/, ""),
   email: process.env.NEXT_PUBLIC_CONTACT_EMAIL ?? "info@cybercina.co.uk",
   phone: { display: "020 7046 6615", href: "tel:+442070466615" },

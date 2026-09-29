@@ -10,7 +10,7 @@ import { pageMetadata } from "@/lib/seo"
 export const metadata = pageMetadata({
   title: "Our Process: From Idea to Launch",
   description:
-    "How Nexora Labs delivers software projects: discovery, requirements, planning, design, development, testing, launch and ongoing support.",
+    "How Cybercina delivers software projects: discovery, requirements, planning, design, development, testing, launch and ongoing support.",
   path: "/process",
 })
 

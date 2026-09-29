@@ -20,7 +20,7 @@ export const businessProblems: string[] = [
   "Need for a new digital product",
 ]
 
-export const whyNexora: (Item & { icon: LucideIcon })[] = [
+export const whyCybercina: (Item & { icon: LucideIcon })[] = [
   { icon: Compass, title: "Business First", description: "We start with your business goals, not technology." },
   { icon: Layers, title: "Built Around You", description: "Every solution is designed around your actual requirements." },
   { icon: Handshake, title: "One Technology Partner", description: "Design, development, AI, integrations, deployment and ongoing support." },

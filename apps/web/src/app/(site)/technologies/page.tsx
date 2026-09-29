@@ -11,7 +11,7 @@ import { pageMetadata } from "@/lib/seo"
 export const metadata = pageMetadata({
   title: "Technology We Use",
   description:
-    "The AI, product, cloud and business technology Nexora Labs builds with, and how we decide what to use on your project.",
+    "The AI, product, cloud and business technology Cybercina builds with, and how we decide what to use on your project.",
   path: "/technologies",
 })
 

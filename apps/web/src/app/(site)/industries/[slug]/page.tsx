@@ -25,7 +25,7 @@ export async function generateMetadata({ params }: PageProps<"/industries/[slug]
   if (!industry) return {}
   return pageMetadata({
     title: `Software & AI Solutions for ${industry.name}`,
-    description: `${industry.summary} Explore common challenges and the digital solutions Nexora Labs can build.`,
+    description: `${industry.summary} Explore common challenges and the digital solutions Cybercina can build.`,
     path: `/industries/${industry.slug}`,
   })
 }

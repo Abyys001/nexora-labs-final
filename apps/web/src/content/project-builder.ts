@@ -83,14 +83,14 @@ import {
   Zap,
 } from "lucide-react"
 
-import { defaultCatalog } from "@nexora/pricing"
+import { defaultCatalog } from "@cybercina/pricing"
 
 import type { BrandIconName } from "@/components/icons/brand-icons"
 import type { projectStages, userScales } from "@/lib/enquiry"
 
 /*
  * Project Builder presentation data. Every price lives in the pricing
- * catalogue (`@nexora/pricing`, served live by the API) — this file only
+ * catalogue (`@cybercina/pricing`, served live by the API) — this file only
  * maps catalogue items to icons and carries copy that isn't priced:
  * industries, goals, smart-recommendation rules.
  */

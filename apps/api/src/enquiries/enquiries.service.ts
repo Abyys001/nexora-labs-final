@@ -1,6 +1,6 @@
 import { randomUUID } from "node:crypto";
 import { Injectable, NotFoundException } from "@nestjs/common";
-import type { Estimate, Selection } from "@nexora/pricing";
+import type { Estimate, Selection } from "@cybercina/pricing";
 import { and, count, desc, eq, ilike, or, sql } from "drizzle-orm";
 import { DbService } from "../db/db.service.js";
 import { enquiries } from "../db/schema.js";

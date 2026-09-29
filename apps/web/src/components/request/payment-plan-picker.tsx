@@ -1,7 +1,7 @@
 "use client"
 
-import type { PaymentPlanKind } from "@nexora/pricing"
-import { secondInstalmentWindow } from "@nexora/pricing"
+import type { PaymentPlanKind } from "@cybercina/pricing"
+import { secondInstalmentWindow } from "@cybercina/pricing"
 import { CalendarDays, Check, Loader2 } from "lucide-react"
 import { useRouter } from "next/navigation"
 import { useMemo, useState, useTransition } from "react"

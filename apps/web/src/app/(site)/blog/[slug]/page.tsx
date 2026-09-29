@@ -62,7 +62,7 @@ export default async function BlogPostPage({ params }: PageProps<"/blog/[slug]">
         intro={post.excerpt}
         actions={
           <p className="text-sm text-muted-foreground">
-            <time dateTime={post.publishedAt}>{formatDate(post.publishedAt)}</time> · {post.readingMinutes} min read · Nexora Labs
+            <time dateTime={post.publishedAt}>{formatDate(post.publishedAt)}</time> · {post.readingMinutes} min read · Cybercina
           </p>
         }
       />

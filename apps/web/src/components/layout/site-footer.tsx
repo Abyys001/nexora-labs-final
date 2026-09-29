@@ -53,7 +53,7 @@ export function SiteFooter() {
         </div>
 
         <p aria-hidden="true" className="font-heading pointer-events-none -mb-[0.18em] bg-gradient-to-b from-white/[0.09] to-transparent bg-clip-text text-center text-[15vw] leading-none text-transparent select-none lg:text-[11rem]">
-          nexora
+          cybercina
         </p>
 
         <div className="flex flex-col gap-3 border-t border-border py-6 text-xs text-muted-foreground sm:flex-row sm:items-center sm:justify-between">

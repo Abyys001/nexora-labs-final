@@ -1,7 +1,7 @@
 "use client"
 
-import type { PricingCatalog, PricingItem, Selection } from "@nexora/pricing"
-import { estimate as computeEstimate } from "@nexora/pricing"
+import type { PricingCatalog, PricingItem, Selection } from "@cybercina/pricing"
+import { estimate as computeEstimate } from "@cybercina/pricing"
 import { ArrowLeft, ArrowRight, Check, ChevronUp, Loader2, RotateCcw, Send, Sparkles } from "lucide-react"
 import { useRouter, useSearchParams } from "next/navigation"
 import { useCallback, useEffect, useMemo, useRef, useState, useTransition } from "react"

@@ -1,4 +1,4 @@
-import type { PricingCatalog } from "@nexora/pricing"
+import type { PricingCatalog } from "@cybercina/pricing"
 
 import type { Enquiry, EnquiryStatus } from "@/lib/enquiry"
 

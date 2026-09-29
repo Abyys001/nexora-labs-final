@@ -79,10 +79,10 @@ describe("admin pricing", () => {
   it("403s a viewer attempting a write", async () => {
     const created = await authed(ownerToken)
       .post("/api/admin/admins")
-      .send({ email: "viewer@nexora.test", name: "Viewer", role: "viewer", password: "viewer-password-123" });
+      .send({ email: "viewer@cybercina.test", name: "Viewer", role: "viewer", password: "viewer-password-123" });
     expect(created.status).toBe(201);
 
-    const login = await request(server.baseUrl).post("/api/auth/login").send({ email: "viewer@nexora.test", password: "viewer-password-123" });
+    const login = await request(server.baseUrl).post("/api/auth/login").send({ email: "viewer@cybercina.test", password: "viewer-password-123" });
     const viewerToken = login.body.accessToken as string;
 
     const readOk = await authed(viewerToken).get("/api/admin/pricing/settings");

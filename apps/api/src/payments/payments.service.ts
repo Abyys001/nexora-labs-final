@@ -1,6 +1,6 @@
 import { ConflictException, Injectable, Logger, NotFoundException, UnprocessableEntityException } from "@nestjs/common";
-import { buildSchedule, deriveRequestPaymentStatus, deriveScheduleItemStatus } from "@nexora/pricing";
-import type { RequestPaymentStatus } from "@nexora/pricing";
+import { buildSchedule, deriveRequestPaymentStatus, deriveScheduleItemStatus } from "@cybercina/pricing";
+import type { RequestPaymentStatus } from "@cybercina/pricing";
 import { desc, eq, inArray } from "drizzle-orm";
 import { AuditLogService } from "../audit/audit-log.service.js";
 import { CurrenciesService } from "../currencies/currencies.service.js";
